@@ -1,0 +1,35 @@
+.myMenu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    height: 100%;
+    box-shadow: 0 2px 20px 0 #e5f1ff;
+    background-color: #ffffff;
+
+}
+
+li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icon {
+
+    width: 21px;
+    height: 21px;
+}
+
+div {
+    float: right;
+}
+
+img {
+    margin: 0;
+    float: right;
+    padding-left: 16px;
+    padding-right: 14px;
+    padding-bottom: 11px;
+}

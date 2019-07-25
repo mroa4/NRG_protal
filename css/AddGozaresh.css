@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url(font/IRANSansWeb_UltraLight.ttf) format("truetype");
+}
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+.background {
+    width: 863px;
+    height: 863px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.02);
+    background-color: #ffffff;
+    margin: 81px auto 81px;
+}
+
+.smallTextAreas {
+    width: 93px;
+    height: 36px;
+    background-color: #fbfbfb;
+    border: none;
+    border-bottom: 4px solid;
+    border-bottom-color: #4a90e2;
+    overflow: auto;
+    resize: none;
+    margin: 0;
+    padding: 0;
+}
+
+.textAreas {
+    width: 793px;
+    height: 149px;
+    background-color: #fbfbfb;
+    border: none;
+    border-bottom: 4px solid;
+    border-bottom-color: #4a90e2;
+    overflow: auto;
+    resize: none;
+    margin: 0;
+    padding: 0;
+}
+
+.normalText {
+    font-size: 20px;
+    color: #3c3c3c;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 47px;
+    height: 47px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 780px;
+    top: 30px;
+}
+
+.textBig {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 636px;
+    top: -12px;
+}
+
+.sabt {
+    width: 344px;
+    height: 50px;
+    background-image: linear-gradient(to top, #0088e2, #0088ff);
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#tarikh {
+    position: relative;
+    left: 781px;
+}
+
+#hoze {
+    position: relative;
+    left: 457px;
+}
+
+#tedad {
+    position: relative;
+    left: 147px;
+}
+
+#sharh {
+    position: relative;
+    left: 730px;
+}
+
+#barname {
+    position: relative;
+    left: 683px;
+}
+
+#lavazem {
+    position: relative;
+    left: 620px;
+
+}
