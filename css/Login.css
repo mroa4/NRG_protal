@@ -33,6 +33,7 @@ label {
 .logo {
     margin-top: 7.2%;
     margin-left: 35.5%;
+    margin-bottom: 4%;
     width: 29%;
 }
 
@@ -47,7 +48,7 @@ label {
     border: none;
     border-bottom: 4px solid;
     border-bottom-color: #004987;
-    padding: 8px 8px 11px;
+    padding: 10px 8px 11px;
     text-align: center;
 
 }
@@ -63,7 +64,7 @@ label {
     border: none;
     border-bottom: 4px solid;
     border-bottom-color: #004987;
-    padding: 8px 8px 11px;
+    padding: 10px 8px 11px;
     text-align: center;
     background-color: #FFFFFF;
 }
