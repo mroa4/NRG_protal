@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Login</title>
+	<meta http-equiv="content-type" content="text/html; charset = UTF-8" />
+	<style type="text/css">
+		@font-face {
+			font-family: "IRANSansWeb";
+			src: url(css/font/IRANSansWeb_UltraLight.ttf) format("truetype");
+		}
+		.background {
+			border-style : hidden;
+			border-radius : 60px;
+			position : absolute;
+			top : 219px;
+			left : 427px;
+			width: 587px;
+			height: 587px;
+			box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.02);
+			background-color: #ffffff;
+		}
+		body {
+			width: 1440px;
+			height: 1024px;
+			background-color: #f5f5f5;
+		}
+		
+		
+		::-webkit-input-placeholder { 
+			font-size : 25px;
+			font-family: IRANSansWeb;
+			font-weight : bold;
+			color : #3c3c3c;
+		}
+		::-moz-placeholder { 
+			font-weight : bold;
+			color : black;
+		}
+		:-ms-input-placeholder { 
+			font-weight : bold;
+			color : black;
+		}
+		:-moz-placeholder { 
+			font-weight : bold;
+			color : black;
+		}
+		.username {
+			font-weight : bold;
+			align : center;
+			position : absolute;
+			top : 441px;
+			left : 492px;
+			width: 456px;
+			height: 41px;
+			padding-bottom : 3px;
+			border : none;
+			border-bottom : 4px solid;
+			border-bottom-color : #004987;
+			padding : 8px;
+			text-align : center;
+			font-size: 18px;
+		}
+		.password {
+			font-weight : bold;
+			font-size: 18px;
+			position : absolute;
+			top : 541px;
+			left : 492px;
+			width: 456px;
+			height: 41px;
+			padding-bottom : 3px;
+			border : none;
+			border-bottom : 4px solid;
+			border-bottom-color : #004987;
+			padding : 8px;
+			text-align : center;
+			background-color: #FFFFFF;
+		}
+		.login {
+			border-style : hidden;
+			border-radius : 50px;
+			font-family: IRANSansWeb;
+			font-weight : bold;
+			font-size: 18px;
+			color: #FFFFFF;
+			position : absolute;
+			top : 694px;
+			left : 597px;
+			width: 247px;
+			height: 59px;
+			background-image: linear-gradient(to top, #0088e2, #0088ff);
+		}
+		.forget {
+			text-align : center;
+			padding : 0;
+			border : none;
+			color: #9a9a9a;
+			background-color : #FFFFFF;
+			position : absolute;
+			top : 602px;
+			left : 674px;
+			width: 95px;
+			height: 27px;
+			font-family: IRANSansWeb;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		.content {
+			max-width : 10px;
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class = "background"> </div>
+		<form method = "POST" > 
+			<input class = "username" type = "text" name = "username" placeholder = "نام کاربری" />
+			<input class = "password" type = "password" name = "password" placeholder = "رمز عبور" />
+			<input class = "login" type = "submit" value = "ورود"  />
+		</form>
+		<a class="forget" href=""> بازیابی رمز عبور </a>
+	</div>
+</body>
+</html>
