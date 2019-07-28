@@ -272,7 +272,7 @@ input:valid + span {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    /*overflow: auto;*/
 
 }
 
@@ -291,9 +291,14 @@ input:valid + span {
     top: 46px;
 }
 
+.icon{
+    margin-top: 8.3%;
+    margin-left: 7.5%;
+    /*margin-bottom: 4%;*/
+    width: 4.3%;
+}
+
 .back {
-    width: 62px;
-    height: 33px;
     font-family: IRANSansWeb, serif;
     font-size: 1.3vw;
     font-weight: normal;
@@ -304,8 +309,8 @@ input:valid + span {
     text-align: right;
     color: #3c3c3c;
     text-decoration: none;
-    position: relative;
-    top: 46px;
+    position: fixed;
+    top: 6.5%;
     left: 67px;
 }
 

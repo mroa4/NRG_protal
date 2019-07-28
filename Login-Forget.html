@@ -14,6 +14,9 @@
             document.getElementsByClassName("card_side-back")[0].style.transform = "rotateY(+180deg)";
             document.getElementsByClassName("card_side-front")[0].style.transform = "rotateY(0deg)";
         }
+        function changecolor() {
+            document.getElementsByClassName("card_side-front")[0].style.color = "yellow"
+        }
     </script>
 </head>
 <body>
@@ -37,7 +40,7 @@
                         </label>
                         <a class="forget" href="#" onclick="rotateToForget()">بازیابی رمز عبور</a>
                         <br>
-                        <input class="login" type="submit" value="ورود"/>
+                        <input class="login" onclick="changecolor()" type="submit" value="ورود"/>
                     </form>
                 </div>
             </div>
@@ -45,6 +48,7 @@
 
         <div class="card_side card_side-back card_side-back-1">
             <div class="backgroundf">
+                <img class="icon" onclick="rotateToFront()" src="icon/back.svg" alt="back"/>
                 <a class="back" href="#" onclick="rotateToFront()"> بازگشت </a>
                 <p class="normalText"> بازیابی رمز عبور </p>
                 <form method="POST">
