@@ -348,3 +348,13 @@ input:valid + span {
     width: 42%;
     height: 8%;
 }
+
+.warning {
+    font-family: IRANSansWeb, serif;
+    font-size: 1.1vw;
+    color: #bbbbbb;
+    position: relative;
+    /*left: 25%;*/
+    margin-bottom: auto;
+    margin-left: auto;
+}
