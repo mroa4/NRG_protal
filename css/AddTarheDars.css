@@ -1,84 +1,107 @@
-body {
-    background-color: #f5f5f5;
-}
-.logo {
-    width: 73px;
-    height: 73px;
-    background-color: #212121;
-}
-.normaltext1{
-    width: 216px;
-    height: 41px;
-    font-family: IRANSansWeb,serif;
-    font-size: 25px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #3c3c3c;
-}
-.normaltext2 {
-    width: 155px;
-    height: 30px;
-    font-family: IRANSansWeb,serif;
-    font-size: 18px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #818181;
-}
-.fileinput{
-
-}
-.submit {
-    width: 206px;
-    height: 58px;
-    background-image: linear-gradient(to top, #0088e2, #0088ff);
-    border-style : hidden;
-    border-radius : 50px;
-    font-weight : bold;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-.button {
-    width: 228px;
-    height: 58px;
-    font-family: IRANSansWeb,serif;
-    font-size: 18px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    border: solid 1px #979797;
-    border-radius : 50px;
-    font-weight : bold;
-    font-size: 20px;
-    background-color :#FFFFFF;
-    color: #2c2c2c;
-}
-.background {
-    width: 587px;
-    height: 587px;
-    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.02);
-    background-color: #ffffff;
-    margin : 219px auto 218px;
-    border-radius : 10px;
-}
-#fileupload {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute !important;
-    white-space: nowrap;
-    width: 1px;
-}
-
+		body {
+			background-color: #f5f5f5;
+		}
+		.background {
+			width: 50.2%;
+			height: 57.3%;
+			box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.02);
+			background-color: #ffffff;
+			margin : 10.4% auto 10%;
+			position : relative;
+			border-radius : 10px;
+		}
+		.logo {
+			width: 12.4%;
+			height: 12.4%;
+			position : absolute;
+			top : 9.9%;
+			left : 9.9%;
+		}
+		
+		
+		#normaltext1{
+			font-family: IRANSansWeb;
+			font-size: 25px;
+			text-align: right;
+			color: #3c3c3c;
+			margin : 0;
+			position : absolute;
+			top : 10.1%;
+			right : 10.9%;
+		}
+		#normaltext2 {
+			font-family: IRANSansWeb;
+			font-size: 18px;
+			font-weight: 300;
+			text-align: right;
+			color: #818181;
+			margin : 0;
+			position : absolute;
+			top : 18.4%;
+			right : 10.9%;
+			
+		}
+		form{
+			margin : 0;
+		}
+		
+		#submit {
+			width: 35.1%;
+			height: 9.9%;
+			background-image: linear-gradient(to top, #0088e2, #0088ff);
+			border-style : hidden;
+			border-radius : 50px;
+			font-size: 18px;
+			font-weight: 500;
+			color: #FFFFFF;
+			padding : 0;
+			position : absolute;
+			top : 64.1%;
+			left : 10.9%;
+		}
+		#button {
+			width: 35.1%;
+			height: 9.9%;
+			font-family: IRANSansWeb;
+			font-size: 18px;
+			font-weight: 500;			
+			border: solid 1px #979797;
+			border-radius : 50px;	
+			background-color :#FFFFFF; 
+			color: #2c2c2c;
+			padding : 0;
+			position : absolute;
+			top : 64.1%;
+			left : 50.3%;
+		}
+		
+		#custom-button{
+			width : 17.9%;
+			height : 8.5%;
+			background-image: linear-gradient(to top, #0088e2, #0088ff);
+			border-style : hidden;
+			border-radius : 50px;
+			font-size: 16px;
+			font-weight: 500;
+			color: #FFFFFF;
+			padding : 0;
+			position : absolute;
+			top : 42.9%;
+			left : 10.9%;
+		}
+		
+		#fileText{
+			width : 57.8%;
+			height : 6.6%;
+			font-family: IRANSansWeb;
+			border-bottom-style : solid;
+			border-bottom-color : var(--darkish-blue);
+			font-size: 18px;
+			font-weight: 300;
+			position : absolute;
+			text-align: left;
+			color: #3c3c3c;
+			top : 44.8%;
+			left : 31.3%;
+		}
+		

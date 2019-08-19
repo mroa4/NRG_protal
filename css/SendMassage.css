@@ -1,0 +1,156 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.SendMassagePage{
+    height: 100%;
+    width: 81.3%;
+    background-color: #f5f5f5;
+}
+.container {
+    height: 84.3%;
+    width: 73.8%;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.02);
+    background-color: #ffffff;
+    position: relative;
+    top : 7.9%;
+    left: 13.2%;
+}
+
+.upperPart {
+    width: 100%;
+    height: 12.5%;
+    background-color: #313131;
+    position: absolute;
+}
+
+#headerIcon {
+    height:27.8% ;
+    width: 4.8%;
+    background-color: #313131;
+    position: absolute;
+    top : 36.1%;
+    right : 7.3%;
+}
+#mainHeader{
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    top : 32.4%;
+    right : 14%;
+}
+.lowerPart {
+    height: 87.5%;
+    position: relative;
+}
+
+form {
+    height: 100%;
+}
+#TargetHeader {
+    text-align: right;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top : 17.4%;
+    right: 7.3%;
+
+}
+#Target {
+    width: 85.2%;
+    height: 6.6%;
+    background-color: #fbfbfb;
+    border : none;
+    border-bottom : 4px solid ;
+    border-bottom-color : #4a90e2;
+    overflow : auto;
+    resize : none;
+    position: absolute;
+    top: 23.5%;
+    left : 7.4%;
+}
+
+#contentHeader{
+    text-align: right;
+    color: #3c3c3c;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top : 32.4%;
+    right : 7.3%;
+}
+
+#content{
+    width: 85.2%;
+    height: 36%;
+    background-color: #fbfbfb;
+    border : none;
+    border-bottom : 4px solid ;
+    border-bottom-color : #4a90e2;
+    overflow : auto;
+    resize : none;
+    text-align: right;
+    direction: rtl;
+    color: #3c3c3c;
+    font-size: 17px;
+    font-weight: 300;
+    position: absolute;
+    top : 40%;
+    left : 7.5%;
+}
+
+#uploadButton {
+    width: 14.1%;
+    height: 6.7%;
+    background-image: linear-gradient(to top, #0088e2, #0088ff);
+    border-style : hidden;
+    border-radius : 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: absolute;
+    top : 82.5%;
+    left : 35.9%;
+}
+
+#uploadText {
+    width: 39.3%;
+    height: 6.7%;
+    text-align: center;
+    border : none;
+    border-bottom : 4px solid ;
+    border-bottom-color : #4a90e2;
+    overflow : auto;
+    resize : none;
+    position: absolute;
+    bottom: 10.8%;
+    left : 53.3%;
+}
+
+#Send {
+    width: 23.9%;
+    height: 6.7%;
+    background-image: linear-gradient(to top, #0088e2, #0088ff);
+    border-style : hidden;
+    border-radius : 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: absolute;
+    top : 82.5%;
+    left : 9.3%;
+}
+
