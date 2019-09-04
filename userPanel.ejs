@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="Fa">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8"/>
+    <title>User Panel</title>
+    <link rel="stylesheet" href="/css/userPanel.css">
+</head>
+<body>
+<div class="parent">
+    <div id="sendMassage-page" class="sendMassagePage">
+        <div class="container">
+            <div class="upperPart">
+                <p id="mainHeader"> ارسال پیام </p>
+                <img id="headerIcon" src="/icon/iconfinder_education-school-learn-study-06_2125344.svg"/>
+            </div>
+            <form action="/sendMassage" method="POST">
+                <p id="TargetHeader" class="kharab">گیرنده پیام</p>
+                <button id="Target" type="button" class="kharab"></button>
+                <p id="contentHeader" class="kharab">متن پیام</p>
+                <textarea id="content" class="kharab"></textarea>
+                <input id="Send" type="submit" value="ارسال پیام" name="submit" class="kharab">
+                <input id="fileUpload" type="file" name="fileupload" hidden="hidden"/>
+                <button id="uploadButton" type="button" class="kharab"> بارگزاری</button>
+                <span id="uploadText" class="kharab"> No file chosen, yet.</span>
+            </form>
+            <script>
+                const realButton = document.getElementById("fileUpload");
+                const fakeButton = document.getElementById("uploadButton");
+                const uploadText = document.getElementById("uploadText");
+
+                fakeButton.addEventListener("click", function () {
+                    realButton.click();
+                });
+                realButton.addEventListener("change", function () {
+                    uploadText.innerHTML = realButton.value;
+                });
+            </script>
+        </div>
+    </div>
+
+    <div id="reviewGozaresh-page" class="reviewGozareshPage">
+        <div class="container">
+            <img src="/icon/iconfinder_icon-42-note-add_314405.svg"></img>
+            <div class="textbozorg">گزارش جلسه</div>
+            <div id="tarikh" class="normaltext">تاریخ</div>
+            <div id="hoze" class="normaltext">حوزه تدریس</div>
+            <div id="tedad" class="normaltext">تعداد زنگ</div>
+            <div id="sharh" class="normaltext">شرح گزارش</div>
+            <div id="barname" class="normaltext">برنامه جلسه آینده</div>
+            <div id="lavazem" class="normaltext">لوازم مورد نیاز جلسه اینده</div>
+            <p id="sharhtextarea" class="textareas"></p>
+            <p id="barnametextarea" class="textareas"></p>
+            <p id="lavazemtextarea" class="textareas"></p>
+            <p id="tedadtextarea" class="smalltextareas"></p>
+            <p id="hozetextarea" class="smalltextareas"></p>
+            <p id="tarikhtextarea" class="smalltextareas"></p>
+        </div>
+    </div>
+
+    <div id="addTarheDars-page" class="addTarheDarsPage">
+        <div class="container">
+            <img class="logo" src="/icon\iconfinder_Tilda_Icons_1ed_calendar_3586371.svg"/>
+            <div class="myTexts">
+                <p id="normaltext1">ثبت طرح درس سالانه</p>
+                <p id="normaltext2">(excel یا word فایل)</p>
+            </div>
+            <form action="/addTarheDars" method="POST">
+                <input id="fileuploadTarheDars" type="file" name="fileupload" hidden="hidden"/>
+                <button id="custom-button" type="button"> بارگزاری</button>
+                <span id="fileText"> No file chosen, yet.</span>
+                <input id="submit" type="submit" name="sabtetarhedars" value="ثبت طرح درس"/>
+                <input id="button" type="button" name="moshahedetarhedars" value="مشاهده طرح درس"/>
+            </form>
+        </div>
+    </div>
+
+    <div id="addGozaresh-page" class="addGozareshPage">
+        <div class="container">
+            <img src="/icon/iconfinder_icon-42-note-add_314405.svg"></img>
+            <div class="textbozorg">گزارش جلسه</div>
+            <div id="tarikhAddGozaresh" class="normaltext">تاریخ</div>
+            <div id="hozeAddGozaresh" class="normaltext">حوزه تدریس</div>
+            <div id="tedadAddGozaresh" class="normaltext">تعداد زنگ</div>
+            <div id="sharhAddGozaresh" class="normaltext">شرح گزارش</div>
+            <div id="barnameAddGozaresh" class="normaltext">برنامه جلسه آینده</div>
+            <div id="lavazemAddGozaresh" class="normaltext">لوازم مورد نیاز جلسه اینده</div>
+            <form action="/addGozaresh" method="POST">
+                <textarea name="descriptionInput" id="sharhTextareaAddGozaresh" class="textareas"></textarea>
+                <textarea name="planInput" id="barnameTextareaAddGozaresh" class="textareas"></textarea>
+                <textarea name="toolsInput" id="lavazemTextareaAddGozaresh" class="textareas"></textarea>
+                <textarea name="numberInput" id="tedadTextareaAddGozaresh" class="smalltextareas"></textarea>
+                <textarea name="areaInput" id="hozeTextareaAddGozaresh" class="smalltextareas"></textarea>
+                <input name="dateInput" id="tarikhTextareaAddGozaresh" onclick="ShowCalendar()" type="button"
+                       class="smalltextareas"/>
+                <input class="sabt" type="submit" name="sumbit" value="ثبت"/>
+            </form>
+            <div class="tableContainer">
+                <input onclick="HideCalendar()" class="closeButton" type="image"
+                       src="/icon/iconfinder_00-ELASTOFONT-STORE-READY_close_2703079.svg" name="exit" value="ss"/>
+                <div class="calendar">
+                    <ul class="weekdays">
+                        <li class="clickable">ش</li>
+                        <li class="clickable">ی</li>
+                        <li class="clickable">د</li>
+                        <li class="clickable">س</li>
+                        <li class="clickable">چ</li>
+                        <li class="clickable">پ</li>
+                        <li class="clickable">ج</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span class="active">10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                var b = document.getElementsByClassName("clickable")[0];
+                b.click(function () {
+                    console.log(121);
+                });
+                function setValue() {
+
+                }
+                function ShowCalendar() {
+                    var a = document.getElementsByClassName("tableContainer")[0];
+                    a.style.display = "inline-block";
+                }
+                function HideCalendar() {
+                    console.log(1);
+                    var a = document.getElementsByClassName("tableContainer")[0];
+                    a.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="Menu">
+        <div class="balaMenu">
+            <div>
+                <img id="avatar" src="/icon/234_13.png" alt="Avatar">
+            </div>
+            <div id="userName"><%= fullname %></div>
+            <div id="job"><%= job %></div>
+            <div id="date"><%= date %></div>
+        </div>
+        <div class="painMenu">
+            <ul>
+                <li>
+                    <div class="name">
+                        انتخاب درس <img class="icon" src="/icon/iconfinder_study_115795.svg" alt="study"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">
+                        انتخاب مدرسه <img class="icon"
+                                          src="/icon/iconfinder_education-school-learn-study-06_2125344.svg"/>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="displayAddTarheDars()" class="name">
+                        ثبت و مشاهده طرح درس <img class="icon"
+                                                  src="/icon/iconfinder_Tilda_Icons_1ed_calendar_3586371.svg"/>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="displayAddGozaresh()" class="name">
+                        ثبت گزارش جلسه <img class="icon" src="/icon/iconfinder_icon-42-note-add_314405.svg"/>
+                    </div>
+                </li>
+                <li>
+
+                    <div onclick="displayReviewGozaresh()" class="name">
+                        بررسی گزارشات ثبت شده <img class="icon" src="/icon/iconfinder_icon-46-note-checked_314408.svg"/>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="name">
+                        تعداد جلسات <img class="icon" src="/icon/iconfinder_icon-hashtag_2867908.svg"/>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="displaySendMassage()" class="name">
+                        ارسال پیام <img class="icon" src="/icon/iconfinder_Cinema_Tickets1_2315959.svg"/>
+                    </div>
+                </li>
+            </ul>
+            <script>
+                function displaySendMassage() {
+                    document.getElementById("addGozaresh-page").style.display = "none";
+                    document.getElementById("addTarheDars-page").style.display = "none";
+                    document.getElementById("reviewGozaresh-page").style.display = "none";
+                    document.getElementById("sendMassage-page").style.display = "inline-block";
+                }
+
+                function displayReviewGozaresh() {
+                    document.getElementById("addGozaresh-page").style.display = "none";
+                    document.getElementById("addTarheDars-page").style.display = "none";
+                    document.getElementById("reviewGozaresh-page").style.display = "inline-block";
+                    document.getElementById("sendMassage-page").style.display = "none";
+                }
+
+                function displayAddTarheDars() {
+                    document.getElementById("addGozaresh-page").style.display = "none";
+                    document.getElementById("addTarheDars-page").style.display = "inline-block";
+                    document.getElementById("reviewGozaresh-page").style.display = "none";
+                    document.getElementById("sendMassage-page").style.display = "none";
+                }
+
+                function displayAddGozaresh() {
+                    document.getElementById("addGozaresh-page").style.display = "inline-block";
+                    document.getElementById("addTarheDars-page").style.display = "none";
+                    document.getElementById("reviewGozaresh-page").style.display = "none";
+                    document.getElementById("sendMassage-page").style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+
+</body>
+</html>

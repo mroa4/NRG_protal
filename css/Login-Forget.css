@@ -14,7 +14,7 @@ label {
 
 @font-face {
     font-family: "IRANSansWeb";
-    src: url(font/IRANSansWeb.ttf) format("truetype");
+    src: url(/font/IRANSansWeb.ttf) format("truetype");
 }
 
 .background {
@@ -253,7 +253,8 @@ input + span {
 }
 
 input:focus + span,
-input:valid + span {
+input:valid + span,
+input:-webkit-autofill + span{
     font-family: IRANSansWeb, serif;
     font-size: 1.25vw;
     top: -68%;
