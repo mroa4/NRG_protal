@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/adminPanel.css">
+</head>
+<body>
+<div class="parent">
+    <div class="menu">
+        <img src="icon/hannah-troupe-0FQneB1VjaM-unsplash.jpg" alt="avatar" id="avatar"/>
+        <span id="username"></span>
+        <span id="job"></span>
+        <span id="date"></span>
+        <div class="menuItems" onclick="displayNewDabir()">
+            <p id="teachers" class="texts">لیست دبیران</p>
+            <img id="teachersIcon" class="icons" src="icon/iconfinder_study_115795.svg" alt="study"/>
+        </div>
+        <div class="menuItems" onclick="displayTarheDars()">
+            <p id="lessons" class="texts"> مشاهده طرح دروس</p>
+            <img id="lessonsIcon" class="icons" src="icon/iconfinder_study_115795.svg" alt="study"/>
+        </div>
+        <div class="menuItems">
+            <p id="reviewReports" class="texts"> بررسی گزارش ها </p>
+            <img id="reviewReportsIcon" class="icons" src="icon/iconfinder_study_115795.svg" alt="study"/>
+        </div>
+        <div class="menuItems" onclick="displayBarresi()">
+            <p id="reviewMeetings" class="texts"> بررسی جلسات </p>
+            <img id="reviewMeetingsIcon" class="icons" src="icon/iconfinder_study_115795.svg" alt="study"/>
+        </div>
+        <div class="menuItems">
+            <p id="sendMassage" class="texts"> ارسال پیام </p>
+            <img id="sendMassageIcon" class="icons" src="icon/iconfinder_study_115795.svg" alt="study"/>
+        </div>
+        <div class="menuItems">
+            <p id="hooghooghLetter" class="texts"> نامه حقوق</p>
+            <img id="hooghooghLetterIcon" class="icons" src="icon/iconfinder_study_115795.svg" alt="study"/>
+        </div>
+        <script>
+            function displayNewDabir() {
+                document.getElementById("newDabir-Page").style.display = "inline-block";
+                document.getElementById("tarheDars-Page").style.display = "none";
+                document.getElementById("barresi-Page").style.display = "none";
+            }
+            function displayTarheDars() {
+                document.getElementById("newDabir-Page").style.display = "none";
+                document.getElementById("tarheDars-Page").style.display = "inline-block";
+                document.getElementById("barresi-Page").style.display = "none";
+            }
+            function displayBarresi() {
+                document.getElementById("newDabir-Page").style.display = "none";
+                document.getElementById("tarheDars-Page").style.display = "none";
+                document.getElementById("barresi-Page").style.display = "inline-block";
+            }
+        </script>
+    </div>
+    <div id="newDabir-Page" class="adminNewDabir">
+        <div class="container">
+            <img id="backIcon" src="icon/back.svg" alt="back"/>
+            <a id="back" href="#"> بازگشت </a>
+            <p id="header">دبیر جدید</p>
+            <form action="/addNewTeacher" method="post">
+                <input type="text" id="firstnameInput" class="inputs" name="firstname" required="required"/>
+                <span id="firstnameInputText" class="inputTexts">نام</span>
+                <input type="text" id="lastnameInput" class="inputs" name="lastname" required="required"/>
+                <span id="lastnameInputText" class="inputTexts">نام خانوادگی</span>
+                <input type="text" id="jobInput" class="inputs" name="job" required="required"/>
+                <span id="jobInputText" class="inputTexts">حوزه تدریس</span>
+                <input type="email" id="emailInput" class="inputs" name="email" required="required"/>
+                <span id="emailInputText" class="inputTexts">ایمیل</span>
+                <input type="text" id="passwordInput" class="inputs" name="password" required="required"/>
+                <span id="passwordInputText" class="inputTexts">رمز پیشفرض</span>
+                <input type="checkbox" id="isPriorInput" name="isPrior"/>
+                <span id="isPriorInputText" class="inputTexts">اولویت ویژه</span>
+                <button id="sumbitButton" type="submit" name="submit">ایجاد پروفایل</button>
+            </form>
+        </div>
+    </div>
+    <div id="tarheDars-Page" class="adminTarheDars">
+        <div class="container">
+            <p id="header">طرح دروس</p>
+            <img class="icons" id="headerIcon" src="/icon/iconfinder_study_115795.svg" alt=""/>
+            <div class="fakeContainer">
+                <table id="myTable">
+                    <tr class="tableHead">
+                        <th class="links"></th>
+                        <th class="dates">تاریخ ثبت</th>
+                        <th class="teachers">نام دبیر</th>
+                        <th class="subjects">نام درس</th>
+                    </tr>
+                    <tr>
+                        <td class="links">asdad</td>
+                        <td class="dates">asdad</td>
+                        <td class="teachers">asdad</td>
+                        <td class="subjects">asdad</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="barresi-Page" class="adminBarresi">
+        <div class="container">
+            <p id="header">بررسی جلسات</p>
+            <img class="icons" id="headerIcon" src="icon/iconfinder_study_115795.svg" alt=""/>
+            <div class="myTable">
+                <table>
+                    <thead class="headerContainer">
+                        <tr class="tableHead">
+                            <th id="totalNameHeader">تعداد کل جلسات</th>
+                            <th id="schoolNameHeader">مدرسه</th>
+                            <th id="teacherNameHeader">نام دبیر</th>
+                            <th id="lessonNameHeader">نام درس</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyContainer">
+                        <tr class="tableRow">
+                            <td class="totalName">12</td>
+                            <td class="schoolName">دبیرستان دوره دوم تهران</td>
+                            <td class="teacherName">شبنام</td>
+                            <td class="lessonName">هوافضا</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="totalName">12</td>
+                            <td class="schoolName">دبیرستان دوره دوم تهران</td>
+                            <td class="teacherName">شبنام</td>
+                            <td class="lessonName">هوافضا</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

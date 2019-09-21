@@ -14,7 +14,7 @@ label {
 
 @font-face {
     font-family: "IRANSansWeb";
-    src: url(/font/IRANSansWeb.ttf) format("truetype");
+    src: url(/public/font/IRANSansWeb.ttf) format("truetype");
 }
 
 .background {

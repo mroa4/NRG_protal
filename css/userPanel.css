@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: "IRANSansWeb";
-    src: url(/font/IRANSansWeb.ttf) format("truetype");
+    src: url(../font/IRANSansWeb.ttf) format("truetype");
 }
 
 p{
@@ -25,6 +25,23 @@ p{
     margin: 0;
     background-color: #f5f5f5;
     float: left;
+    font-family: "IRANSansWeb", serif;
+}
+
+.parent * :focus , * :active{
+    outline: none;
+}
+
+button:hover , input[type=submit]:hover {
+    cursor: pointer;
+}
+
+textarea:hover {
+    cursor: text;
+}
+
+.Menu .name:hover{
+    cursor: pointer;
 }
 
 .sendMassagePage{
@@ -32,6 +49,7 @@ p{
     width: 81.3%;
     margin: 0;
     background-color: #f5f5f5;
+    display: none;
     float: left;
 }
 .sendMassagePage .container {
@@ -95,6 +113,8 @@ p{
     border-bottom-color : #4a90e2;
     overflow : auto;
     resize : none;
+    direction: rtl;
+    text-align: right;
     position: absolute;
     top: 23.5%;
     left : 7.4%;
@@ -173,7 +193,116 @@ p{
     top : 82.5%;
     left : 9.3%;
 }
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
+.tedadJalasatPage {
+    height: 100%;
+    width: 81.3%;
+    margin: 0;
+    background-color: #f5f5f5;
+    float: left;
+}
+
+.tedadJalasatPage .container {
+    width: 73.8%;
+    height: 84.3%;
+    position: relative;
+    top: 7.9%;
+    left: 13.2%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.tedadJalasatPage .season {
+    width: 12.5%;
+    background-color: #f4f4f4;
+    font-size: 18px;
+    text-align: center;
+    color: #292929;
+    position: absolute;
+    top: 17.7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 40px;
+}
+
+.tedadJalasatPage #yearHeader {
+    font-size: 31px;
+    font-weight: 500;
+    text-align: center;
+    color: #292929;
+    position: absolute;
+}
+
+.tedadJalasatPage .arrows {
+    width: 5.1%;
+    height: 5.1%;
+    color: #d7d7d7;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+}
+
+.tedadJalasatPage .middlePart {
+    background-color: #efefef;
+    height: 49.6%;
+    width: 100%;
+    position: absolute;
+    top: 27.6%;
+}
+
+.tedadJalasatPage .counters {
+    width: 29%;
+    height: 5.1%;
+    text-align: right;
+    color: #292929;
+    background-color: #fbfbfb;
+    position: absolute;
+    right: 5.2%;
+}
+
+.tedadJalasatPage #nextYearArrow {
+    top: 6.1%;
+    left: 57.5%;
+}
+
+.tedadJalasatPage #yearHeader {
+    top: 6.1%;
+    left: 46.2%;
+}
+
+.tedadJalasatPage #lastYearArrow {
+    top: 6.1%;
+    left: 37.4%;
+}
+
+.tedadJalasatPage #seasonOne {
+    left: 13.8%;
+}
+
+.tedadJalasatPage #seasonTwo {
+    left: 33.7%;
+}
+
+.tedadJalasatPage #seasonThree {
+    left: 53.5%;
+}
+
+.tedadJalasatPage #seasonFour {
+    left: 73.5%;
+}
+
+.tedadJalasatPage #allClasses {
+    bottom: 11.1%;
+    padding-top: 0.8%;
+    padding-right: 1.1%;
+}
+
+.tedadJalasatPage #seasonClasses {
+    bottom: 4.8%;
+    padding-top: 0.8%;
+    padding-right: 1.1%;
+}
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 .Menu {
@@ -187,6 +316,7 @@ p{
 .Menu ul {
     list-style-type:none;
     width : 100%;
+    color: #241f20;
     margin-left : 0 ;
     margin-right : 0;
 }
@@ -243,7 +373,6 @@ p{
     color: #4e4e4e;
     text-align : center;
     padding : 0;
-    margin : 0 ;
     margin-top : 5.2%;
 }
 .Menu #job {
@@ -320,7 +449,7 @@ p{
 .reviewGozareshPage .normaltext {
     font-size: 20px;
     color: #3c3c3c;
-    font-weight : bold;
+    font-weight : 500;
     margin : 0;
     padding : 0;
     position : absolute;
@@ -337,7 +466,7 @@ p{
 }
 .reviewGozareshPage .textbozorg {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 500;
     margin : 0;
     padding : 0;
     position : absolute;
@@ -447,9 +576,11 @@ p{
 .addTarheDarsPage {
     height: 100%;
     width: 81.3%;
+    position: relative;
     margin: 0;
     background-color: #f5f5f5;
     display: none;
+    float: left;
 }
 
 .addTarheDarsPage .container {
@@ -512,6 +643,11 @@ p{
     top : 64.1%;
     left : 10.9%;
 }
+
+.addTarheDarsPage #submit:hover {
+    cursor: pointer;
+}
+
 .addTarheDarsPage #button {
     width: 35.1%;
     height: 9.9%;
@@ -720,7 +856,7 @@ p{
     text-align: center;
     color: #3c3c3c;
 }
-.addGozareshPage	#tarikhTextareaAddGozaresh {
+.addGozareshPage    #tarikhTextareaAddGozaresh {
     top : 13.9%;
     left : 78.2%;
     font-family: IRANSansWeb, serif;
@@ -730,16 +866,17 @@ p{
     color: #3c3c3c;
 }
 
-.addGozareshPage	.tableContainer {
+.addGozareshPage    .tableContainer {
     display : none;
     height : 31.4%;
     width : 36.8%;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.21);
     background-color: #ffffff;
-    border-radius : 10px;
+    border-radius : 20px;
     position : absolute;
     top : 18.1%;
     left : 58.4%;
+    overflow: auto;
 }
 
 .addGozareshPage  .closeButton {
@@ -750,26 +887,36 @@ p{
     height : 5%;
 }
 
-.addGozareshPage	* :focus , * :active{
-    outline : none;
+.addGozareshPage .weekdays {
+    padding-left: 1.4%;
+    margin : 0;
 }
 
-
-
-
 .addGozareshPage .weekdays li {
+    width: 2.5%;
     display: inline-block;
-    width: 9%;
-    color: #666;
+    font-size: 10px;
+    padding-left: 9%;
+    color: #9a9a9a;
     text-align: center;
+}
+
+.addGozareshPage .days {
+    padding-left: 1.4%;
+    margin: 0;
 }
 
 .addGozareshPage .days li {
+    width: 2.5%;
     list-style-type: none;
     display: inline-block;
-    width: 9%;
+    padding-left: 9%;
     text-align: center;
-    font-size:12px;
-    color: #777;
+    font-size:13px;
+    color: #2c2c2c;
+}
+
+.addGozareshPage .days .dayNumbers:hover {
+    color: #4a90e2;
 }
 

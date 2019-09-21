@@ -9,6 +9,20 @@ body {
     height: 100%;
 }
 
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url(../font/IRANSansWeb.ttf) format("truetype");
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #f5f5f5;
+    float: left;
+    font-family: "IRANSansWeb", serif;
+}
+
 .menu {
     width: 18.7%;
     height: 100%;
@@ -245,12 +259,15 @@ body {
     font-weight: 500;
     color: #FFFFFF;
 }
+
+/*sddddddddddddddddddddddddddddddddddddddddddsdaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddddddddddddddddd*/
+
 .adminTarheDars {
     height: 100%;
     width: 81.3%;
     margin: 0;
     background-color: #f5f5f5;
-    float: right;
+    float: left;
     position: relative;
     display: none;
 }
@@ -325,6 +342,8 @@ body {
     padding-right: 2%;
 }
 
+/*adsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+
 .adminBarresi {
     height: 100%;
     width: 81.3%;
@@ -355,10 +374,111 @@ body {
     direction: rtl;
 }
 .adminBarresi #headerIcon {
-    width: 3.2%;
-    height: 3.2%;
+    width: 4.2%;
+    height: 4.2%;
     position: absolute;
     top: 4.9%;
     right: 5.4%;
 }
+
+.adminBarresi .myTable {
+    width: 88.1%;
+    height: 80.6%;
+    position: absolute;
+    display: block;
+    left: 6.5%;
+    top: 12.1%;
+    background-color: #f8f8f8;
+}
+
+.adminBarresi .myTable table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: solid 1px black;
+}
+
+.adminBarresi .myTable .headerContainer {
+    width: 100%;
+}
+
+.adminBarresi .myTable .bodyContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.adminBarresi .myTable .tableHead {
+    background-color: #313131;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0;
+    color: #3798fa;
+    text-align: right;
+}
+
+.adminBarresi .myTable #lessonNameHeader {
+    padding-right: 1.7%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+.adminBarresi .myTable #teacherNameHeader {
+    padding-right: 1.7%;
+}
+.adminBarresi .myTable #schoolNameHeader {
+    padding-right: 1.7%;
+}
+.adminBarresi .myTable #totalNameHeader {
+    padding-right: 1.7%;
+}
+
+.adminBarresi .myTable .tableRow {
+    font-weight: 300;
+    font-size: 16px;
+}
+.adminBarresi .myTable .lessonName {
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 1.7%;
+    padding-right: 1.7%;
+    color: #3c3c3c;
+    text-align: right;
+    width: 28.8%;
+}
+.adminBarresi .myTable .teacherName {
+    padding-top: 1.7%;
+    padding-right: 1.7%;
+    text-align: right;
+    width: 20.9%;
+}
+.adminBarresi .myTable .schoolName {
+    padding-top: 1.7%;
+    padding-right: 1.7%;
+    text-align: right;
+    width: 26.3%;
+}
+.adminBarresi .myTable .totalName {
+    padding-top: 1.7%;
+    padding-right: 1.7%;
+    text-align: center;
+    width: 23.4%;
+}
+.myTable::-webkit-scrollbar {
+    width: 0.7%;
+}
+.myTable::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+.myTable::-webkit-scrollbar-thumb {
+    background: #aeaeae;
+    border-radius: 10px;
+}
+
+.myTable .tableRow:hover{
+    background-color: #e3e3e3;
+}
+
+
 
